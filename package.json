@@ -28,11 +28,17 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
-  "author": "",
-  "homepage": "",
+  "author": "William Queiroz <wnqueiroz@outlook.com>",
+  "homepage": "https://github.com/wnqueiroz/react-awesome-login#readme",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wnqueiroz/react-awesome-login.git"
+  },
   "keywords": [
-    "react-component"
+    "react-component",
+    "library",
+    "wnqueiroz",
+    "login"
   ]
 }
