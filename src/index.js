@@ -41,6 +41,7 @@ class AwesomeLogin extends Component {
                 type="password"
                 fullWidth
               />
+              <span className="forgot-password">Forgot password?</span>
               <div className="input">
                 <input type="submit" value="Submit" />
               </div>

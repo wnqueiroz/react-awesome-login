@@ -67,6 +67,16 @@ $gradient-list: (linear-gradient(45deg, #9d2485 0%, #00a6bc 100%));
         margin-bottom: 15px;
       }
 
+      & .forgot-password {
+        color: #9d2485;
+        font-size: 0.8em;
+        cursor: pointer;
+        transition: font-weight 0.2ms ease-in;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+
       .description {
         color: #97a1a0;
         font-size: 1em;
