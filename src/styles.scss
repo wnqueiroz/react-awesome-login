@@ -109,6 +109,10 @@ $gradient-list: (linear-gradient(45deg, #9d2485 0%, #00a6bc 100%));
         }
       }
     }
+
+    > .footer-message {
+      text-align: center;
+    }
   }
 
   .content {

@@ -48,7 +48,9 @@ class AwesomeLogin extends Component {
             </div>
           </form>
 
-          <span>© 2018 Your Company - Todos os direitos reservados</span>
+          <span className="footer-message">
+            © 2018 Your Company - Todos os direitos reservados
+          </span>
         </aside>
         <aside className="content">
           <span className="welcome-message">Welcome to Your Company</span>
