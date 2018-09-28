@@ -1,0 +1,116 @@
+@import "./styles/reset";
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+$gradient-list: (linear-gradient(45deg, #9d2485 0%, #00a6bc 100%));
+
+.login-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  background: nth($gradient-list, 1);
+  min-height: 100vh;
+
+  .aside-left {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    width: 40vw;
+    min-height: 89vh;
+
+    > .navbar {
+      width: 100%;
+      display: flex;
+      align-self: flex-end;
+      flex: 1;
+      justify-content: space-between;
+
+      & .brand {
+        max-height: 49px;
+        width: auto;
+      }
+
+      & .item {
+        float: left;
+        padding: 10px;
+        color: #97a1a0;
+
+        &.-active {
+          border-bottom: 2px solid;
+          font-weight: bold;
+          color: #9d2485;
+        }
+
+        &:not(.-active):hover {
+          @extend .-active;
+          cursor: pointer;
+        }
+
+        transition: 0.2s;
+      }
+    }
+
+    .login-form {
+      flex: 2;
+      width: 100%;
+
+      .title {
+        font-size: 2em;
+        font-weight: lighter;
+        margin-bottom: 15px;
+      }
+
+      .description {
+        color: #97a1a0;
+        font-size: 1em;
+        font-weight: lighter;
+        margin-bottom: 15px;
+      }
+
+      .input-group {
+        margin: 25px 0;
+
+        > .input {
+          position: relative;
+
+          & [type="submit"] {
+            background: nth($gradient-list, 1);
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.1s ease-in;
+
+            &:hover {
+              cursor: pointer;
+              box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+
+    > .welcome-message {
+      display: flex;
+      align-self: flex-end;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 80px;
+      color: #fff;
+    }
+  }
+}
