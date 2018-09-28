@@ -40,11 +40,13 @@ $gradient-list: (linear-gradient(45deg, #9d2485 0%, #00a6bc 100%));
       & .item {
         float: left;
         padding: 10px;
+        height: 40px;
+        border-bottom: 2px solid transparent;
+
         color: #97a1a0;
 
         &.-active {
           border-bottom: 2px solid;
-          font-weight: bold;
           color: #9d2485;
         }
 
