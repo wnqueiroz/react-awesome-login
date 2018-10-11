@@ -11,6 +11,23 @@ module.exports = {
       sass: {
         includePaths: [path.resolve("src/styles")]
       }
+    },
+    extra: {
+      resolve: {
+        extensions: [".js", ".jsx"]
+      },
+      module: {
+        rules: [
+          {
+            test: /\.js[x]$/,
+            exclude: /node_modules/,
+            loader: "babel-loader",
+            query: {
+              presets: ["react"]
+            }
+          }
+        ]
+      }
     }
   }
 }
