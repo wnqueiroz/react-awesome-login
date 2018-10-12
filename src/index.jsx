@@ -12,7 +12,7 @@ class AwesomeLogin extends Component {
           <nav className="navbar">
             <img
               src="http://pigment.github.io/fake-logos/logos/small/color/the-dance-studio.png"
-              className="brand"
+              class="brand"
               alt=""
             />
 
