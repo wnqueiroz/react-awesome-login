@@ -1,6 +1,6 @@
 # react-awesome-login
 
-[![Travis][build-badge]][build]
+[![CircleCI](https://circleci.com/gh/wnqueiroz/react-awesome-login.svg?style=shield)](https://circleci.com/gh/wnqueiroz/react-awesome-login)
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
