@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import { render } from "react-dom"
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
-import Example from "../../src/"
+import Example from '../../src/'
 
 class Demo extends Component {
   render() {
@@ -9,4 +9,4 @@ class Demo extends Component {
   }
 }
 
-render(<Demo />, document.querySelector("#demo"))
+render(<Demo />, document.querySelector('#demo'))

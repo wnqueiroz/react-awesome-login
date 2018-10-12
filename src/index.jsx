@@ -1,8 +1,8 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 
-import "./styles.scss"
+import './styles.scss'
 
-import TextField from "@material-ui/core/TextField"
+import TextField from '@material-ui/core/TextField'
 
 class AwesomeLogin extends Component {
   render() {
@@ -12,7 +12,8 @@ class AwesomeLogin extends Component {
           <nav className="navbar">
             <img
               src="http://pigment.github.io/fake-logos/logos/small/color/the-dance-studio.png"
-              class="brand"
+              className="brand"
+              alt=""
             />
 
             <ul className="list">

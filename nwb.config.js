@@ -1,33 +1,34 @@
-const path = require("path")
+const path = require('path')
 
 module.exports = {
-  type: "react-component",
+  type: 'react-component',
   npm: {
     esModules: true,
-    umd: false
+    umd: false,
   },
   webpack: {
     rules: {
       sass: {
-        includePaths: [path.resolve("src/styles")]
-      }
+        includePaths: [path.resolve('src/styles')],
+      },
     },
     extra: {
       resolve: {
-        extensions: [".js", ".jsx"]
+        extensions: ['.js', '.jsx'],
       },
       module: {
         rules: [
           {
             test: /\.js[x]$/,
             exclude: /node_modules/,
-            loader: "babel-loader",
+            loader: 'babel-loader',
             query: {
-              presets: ["react"]
-            }
-          }
-        ]
-      }
-    }
-  }
+              presets: ['react'],
+              plugins: ['transform-class-properties'],
+            },
+          },
+        ],
+      },
+    },
+  },
 }
