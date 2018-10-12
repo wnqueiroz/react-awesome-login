@@ -48,9 +48,8 @@ workflows:
           filters:
             branches:
               only:
-                # - master
-                # - develop
-                - feature/RAL-7kw3zn3f
+                - master
+                - develop
 
       - test:
           requires:
