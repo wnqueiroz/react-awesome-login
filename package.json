@@ -20,6 +20,11 @@
     "test:watch": "nwb test-react --server",
     "lint": "./node_modules/.bin/eslint src/*.jsx"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
+  },
   "dependencies": {
     "@material-ui/core": "^3.1.1"
   },
