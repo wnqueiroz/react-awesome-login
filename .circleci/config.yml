@@ -42,7 +42,7 @@ jobs:
       - run: npm test
 workflows:
   version: 2
-  build_and_test:
+  build-test-and-deploy-on-hold:
     jobs:
       - build:
           filters:
