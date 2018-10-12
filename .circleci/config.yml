@@ -40,3 +40,40 @@ jobs:
             - v1-dependencies-
 
       - run: npm test
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+          filters:
+            branches:
+              only:
+                # - master
+                # - develop
+                - feature/RAL-7kw3zn3f
+      
+      - test:
+          requires:
+            - build
+
+      - hold:
+          type: approval
+          requires:
+            - test
+
+      - deploy-develop:
+          requires:
+            - test
+            - build
+          filters:
+            branches:
+              only: develop
+
+      - deploy-prod:
+          requires:
+            - build
+            - test
+            - hold
+          filters:
+            branches:
+              only: master
