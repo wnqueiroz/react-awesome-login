@@ -6,6 +6,12 @@
   },
   "rules": {
     "semi": 0,
-    "react/prefer-stateless-function": false
+    "react/prefer-stateless-function": false,
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
   }
 }
