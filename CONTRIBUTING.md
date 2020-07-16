@@ -1,25 +1,49 @@
-## Prerequisites
+# 🤝Welcome to React Awesome Login Contributor Session! 
 
-[Node.js](http://nodejs.org/) >= 6 must be installed.
+Hi **Contributor**!</br> 
 
-## Installation
+Is your first time in here? If you want to learn about how to **contribute** to this repository, this is the right place. Just read me!<br/>
 
-- Running `npm install` in the component's root directory will install everything you need for development.
+Next, we'll have a **step by step** to follow, I hope you don't get bothered, but we need this to establish a **good codebase** and a **great maintenance**. There's good reasons to have this _measures_, and plenty of material talking about git best practices (if you want to checkout some of these, [here's a good place to start with](https://sethrobertson.github.io/GitBestPractices/)).<br/>
 
-## Demo Development Server
+## 🍴FORKING IT
 
-- `npm start` will run a development server with the component's demo app at [http://localhost:3000](http://localhost:3000) with hot module reloading.
+Like any other repository, to have your contribution first steps done, you need to **fork React Awesome Login** to your github account. Which means you have to **click on fork** in the [repo home page](https://github.com/wnqueiroz/react-awesome-login) and we're done **forking it**.<br/>
 
-## Running Tests
+## 📖BRANCHING
 
-- `npm test` will run the tests once.
+Are you familiar with **branchs**? OMG, we have so much in common!😱<br/>
 
-- `npm run test:coverage` will run the tests and produce a coverage report in `coverage/`.
+Our repo follows a template to create branchs, and actually it's very simple. Do you want to `fix` a bug, add some `features`? You need a place that **everyone that is interested in your fix or feature** could have easy access and read **very briefly** information about it .<br/>
 
-- `npm run test:watch` will run the tests on every change.
+And that involves **opening a issue** in github repo page.
+It is a very organized way to **mend all the information** about your fix/feature. Stick with me:<br/>
 
-## Building
+✔️ open a issue related to the feature/fix and validate<br/>
+✔️ create your branch with the issue id, found on URL<br/>
+✔️ `git checkout -b <feat or fix>/RAL-<github issue ID>`<br/>
 
-- `npm run build` will build the component for publishing to npm and also bundle the demo app.
+Now, everyone can easily access your branch by reading your issue URL, and vice versa.<br/>
 
-- `npm run clean` will delete built resources.
+>**Branch Example**: fix/RAL-1481<br/>
+> **ProTip**: if you're in trouble asking yourself **"WHERE IS THIS ISSUE ID?"**, just open your issue, take a look at the URL, is it something like that?<br/>
+`https://github.com/wnqueiroz/react-awesome-login/issues/1481`<br/>
+>  Probably yes. Just grab the **1481** from the URL, that's your issue ID.<br/>
+
+## 🖊️COMMITING
+This one's easy.<br/>
+You should just commit whenever it feels you've **done a relevant code change**. And obviously, **always** do these _commits_ in the branch you created in the previously step. <br/>
+
+Remember, _keep calm and commit_<br/>
+
+## 💻PULL REQUESTS
+
+Are you anxious already? **It IS TIME!**<br/>
+As well as commiting, there's no big secrets here. You will...<br/>
+
+✔️ push your so **beloved branch**<br/>
+✔️ go to your online **forked repo page**<br/>
+✔️ open **a pull request** comparing to `develop`<br/>
+
+As soon as it is **REVIEWED** and **APPROVED**, congratulations!🎉<br/>
+You contributed to React Awesome Login development, we're grateful. Thank you!
